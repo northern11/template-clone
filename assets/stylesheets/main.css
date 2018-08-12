@@ -125,6 +125,7 @@ table {
 	*/
   .nav {
 		text-align: right;
+		text-transform: uppercase;
 	}
 
   .primary-nav a {
@@ -134,4 +135,13 @@ table {
 	.primary-nav li {
 		display: inline-block;
 		margin: 0 10px;
+	}
+
+	/*
+		======================================================
+		Primary Header
+		======================================================
+	*/
+  .logo {
+		float: left;
 	}
