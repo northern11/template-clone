@@ -116,6 +116,17 @@ table {
 		text-decoration: none;
 	}
 
-  nav a {
-		color: #fff
+
+
+	/*
+	  ======================================================
+		Navigation Styles
+		======================================================
+	*/
+  .nav {
+		text-align: right;
+	}
+
+  .primary-nav a {
+		color: #fff;
 	}
