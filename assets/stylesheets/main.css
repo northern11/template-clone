@@ -60,17 +60,16 @@ table {
 
 /*
   ======================================================
-	Custom style
+	Custom style -  This all to be changed
 	======================================================
 */
   body {
 		background: #293f50;
-		color: #888;
 		font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 
-  h1, h2, h3, h4 {
-		color: #648880;
+  h1, h2, h3, h4, h5, p, li {
+		color: #505050;
 	}
 
 	h1 {
@@ -89,10 +88,7 @@ table {
 	}
 
 	h5 {
-		color: #a9bdb9;
 		font-size: 14px;
-		font-weight: 400;
-		text-transform: uppercase;
 	}
 
 /* <strong>, <cite> and <em> were reset */
@@ -122,13 +118,24 @@ table {
 		padding-right: 30px;
 		width: 960px;
 	}
+
+	/*
+	  ======================================================
+		Typography
+		======================================================
+	*/
+
+	h1, h3, h4, h5, p {
+		margin-bottom: 22px;
+	}
+
 	/*
 	  ======================================================
 		Links
 		======================================================
 	*/
 
-  a:hover {
+  a {
 		color: #a85136;
 	}
   a {
@@ -145,8 +152,12 @@ table {
   .nav {
 		text-align: right;
 		text-transform: uppercase;
+		border: 5px solid red;
 	}
 
+  .primary-nav {
+		float: right;
+	}
   .primary-nav a {
 		color: #fff;
 	}
@@ -154,8 +165,9 @@ table {
 		color: #a85136;
 	}
 	.primary-nav li {
+		font-size: 15px;
 		display: inline-block;
-		margin: 0 10px;
+		margin: 10px 10px;
 		vertical-align: top;
 	}
   .primary-nav li:last-child {
@@ -163,14 +175,35 @@ table {
 	}
 	/*
 		======================================================
-		Primary Header
+		Logo
 		======================================================
 	*/
   .logo {
+		font-size: 20px;;
 		text-align: left;
-		padding-left: 44px;
-		padding-top: 10px;
 		text-transform: uppercase;
+		border: 5px solid red;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+	}
+
+	/*
+		======================================================
+    Clearfix - for clearing floats
+		======================================================
+	*/
+  .group:before,
+	.group:after {
+		content: "";
+		display: table;
+	}
+	.group:after {
+		clear: both;
+	}
+	.group {
+		clear: both;
+		*zoom: 1;
 	}
 
 
