@@ -150,12 +150,17 @@ table {
   .primary-nav a {
 		color: #fff;
 	}
-
+  .primary-nav a:hover {  /* Is this needed if Links are the same?*/
+		color: #a85136;
+	}
 	.primary-nav li {
 		display: inline-block;
 		margin: 0 10px;
+		vertical-align: top;
 	}
-
+  .primary-nav li:last-child {
+		margin-right: 0;
+	}
 	/*
 		======================================================
 		Primary Header
@@ -167,3 +172,10 @@ table {
 		padding-top: 10px;
 		text-transform: uppercase;
 	}
+
+
+	/*
+	=====================================================
+	Buttons
+	=====================================================
+*/
