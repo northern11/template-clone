@@ -115,3 +115,7 @@ table {
   a {
 		text-decoration: none;
 	}
+
+  nav a {
+		color: #fff
+	}
