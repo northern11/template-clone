@@ -195,7 +195,7 @@ table {
 	.logo a {
 		color: #fff;
 	}
-	.logo a:hover { /* doesn't work */
+	.logo a:hover {
 		color: #a85136;
 	}
 	/*
@@ -223,15 +223,30 @@ table {
 	=====================================================
 */
 
+	.btn {
+		display: inline-block;
+		margin: 0;
+	}
+
+	.btn-alt {
+		border: 1px solid #fff;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+  .btn-alt:hover {
+		background-color: #a85136;
+	}
+
 /*
 	=====================================================
 	Two-Column and Three-Column Reusable Layout
 	======================================================
 	*/
-  .col-1-2 {
+/*  .col-1-2 {
 		width: 50%;
 		border: 5px solid red;
-	}
+	} */
 	.col-1-3 {
 		width: 33.33%;
 		border: 5px solid red;
@@ -240,7 +255,7 @@ table {
 		width: 66.66%;
 		border: 5px solid red;
 	}
-	.col-1-2,
+/*	.col-1-2, */
 	.col-1-3,
 	.col-2-3, {
 	  display: inline-block;
@@ -249,8 +264,17 @@ table {
 
 	.grid,
 	.col-1-3,
-	.col-1-2,
 	.col-2-3 {
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+	/*
+		=====================================================
+		Home Banner
+		======================================================
+		*/
+
+  .hero {
+		padding: 70px 80px 70px 80px;
 	}
